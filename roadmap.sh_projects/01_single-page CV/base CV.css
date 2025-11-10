@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+}
+main{
+    width: 50%;
+    min-width: 400px;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 2px solid;
+    padding: 2%;
+}
+.blue-text{
+    color:rgb(59, 59, 223);
+}
+.green-text{
+    color:rgb(43, 133, 43);
+}
+.medium-text{
+    font-size: large;
+}
+.text{
+    font-size: medium;
+}
+section{
+    margin-top: 1em;
+}
+h1{
+    margin-top:1em;
+    margin-bottom: 1em;
+}
