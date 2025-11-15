@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+}
+body{
+    width:100%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+header,footer{
+    border: 2px solid;
+}
+main{
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
+.logo{
+    width: 10%;
+}
+.header-nav,.main-info,.header-logo,
+.header-nav-links,.reviews{
+    display: flex;
+}
+
+.main-info-item{
+    flex: 1;
+}
+.center-main-info-item{
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
+.main-info-item h2,.main-info-item div div{
+    padding: 2em;
+}
+.main-info-item div div:not(:last-child){
+    border-bottom: 2px solid;
+}
+
+.header-nav-links{
+    list-style: none;
+    gap: 0.5em;
+}
+.header-logo,.header-nav-links{
+    align-items: center;
+}
+.header-info{
+    margin-top: 2.5em;
+    margin-bottom:2.5em; 
+    text-align: center;
+    flex: 1;
+}
+
+
+.review-item{
+    padding: 1em;
+    margin: 1em;
+    border: 2px solid;
+    border-radius: 12px;
+}
