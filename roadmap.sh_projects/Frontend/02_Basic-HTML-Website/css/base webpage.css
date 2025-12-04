@@ -1,60 +1,69 @@
-*{
-    margin: 0;
+*{ box-sizing: border-box; }
+
+body{ margin: 0; }
+.body-container {
+    margin:1em;
+    border: 2px solid black;
 }
-body{
-    width:100%;
-    max-width: 800px;
-    margin: 0 auto;
-    box-sizing: border-box;
+header,main {
+    border-bottom: 2px solid black;
+}
+.logo {width: 64px;
+height: 64px;}
+
+.flex {display: flex;}
+.grid {display: grid;}
+.text-align-center{text-align: center;}
+.gray-text {color:gray;}
+.font-italic{font-style: italic;}
+
+.header-nav-links {
+    list-style-type: none;
+    gap:0.5em;
+    margin-left: auto;
+}
+.header-nav-links a{
+    text-decoration: none;
 }
 
-header,footer{
-    border: 2px solid;
+.main-info-item {
+    flex:1;
+    border-right: 2px solid black;
+    padding: none;
 }
-main{
-    border-left: 2px solid;
-    border-right: 2px solid;
+.main-info-item:last-child{
+    border-right:none;
 }
-.logo{
-    width: 10%;
+/* .project-item:not(:first-child),.experience-item:not(:first-child){ */
+.project-item + .project-item {
+    border-top: 2px solid black;
+    padding: 4px;
 }
-.header-nav,.main-info,.header-logo,
-.header-nav-links,.reviews{
-    display: flex;
+.reviews{
+    margin: auto;
+    justify-content: space-evenly;
 }
-
-.main-info-item{
-    flex: 1;
-}
-.center-main-info-item{
-    border-left: 2px solid;
-    border-right: 2px solid;
-}
-.main-info-item h2,.main-info-item div div{
-    padding: 2em;
-}
-.main-info-item div div:not(:last-child){
-    border-bottom: 2px solid;
-}
-
-.header-nav-links{
-    list-style: none;
-    gap: 0.5em;
-}
-.header-logo,.header-nav-links{
-    align-items: center;
-}
-.header-info{
-    margin-top: 2.5em;
-    margin-bottom:2.5em; 
-    text-align: center;
-    flex: 1;
-}
-
-
 .review-item{
-    padding: 1em;
-    margin: 1em;
+    padding: 0 1em 0 1em ;
+    border: 2px solid black;
+    border-radius: 40px;
+}
+.review-comment{
+    max-width: 12em;
+    width: 100%;
+}
+.teacher{margin-bottom:0;}
+.profession{margin-top:0;}
+
+h2,.header-nav{padding:1rem;}
+.header-nav{padding-bottom: 0;}
+p{padding: 0 1rem 0 1rem ;}
+
+
+.form_contact {display: grid;}
+.form_contact form{
     border: 2px solid;
-    border-radius: 12px;
+    border-radius: 2em;
+    margin: 1em auto 1em auto;
+    padding: 1em;
 }

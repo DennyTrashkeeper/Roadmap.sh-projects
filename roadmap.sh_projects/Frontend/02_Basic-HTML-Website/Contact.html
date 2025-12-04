@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META INFO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO META INFO -->
+    <meta name="description" content="A simple HTML contact page">
+    <meta name="keywords" content="HTML,Frontend Project,roadmap.sh,Contact">
+    <meta name="author" content="George Witmer">
+    <!-- OG TAGS -->
+    <meta property="og:title" content="Contact - George Witmer">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo.ico">
+    <meta property="og:url" content="http://127.0.0.1/Contact">
+    <!-- HEAD CONTENT -->
+    <title>Contact - George Witmer</title>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="css/base webpage.css">
+    <!-- ICONS -->
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="body-container">
+        <header>
+            <nav class="header-nav flex">
+                <div class="header-logo flex">
+                    <img class="logo" src="images/logo.png" alt="Logo:Minimalistic black cat">
+                    <p id="Username">George Witmer</p>
+                </div>
+                <ul class="header-nav-links flex">
+                    <li><a href="Index.html">Homepage</a> /</li>
+                    <li><a href="Projects.html">Projects</a> /</li>
+                    <li><a href="Articles.html">Articles</a> /</li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <section class="header-info">
+                <h1 class="font-italic text-align-center">Fullstack developer</h1>
+                <p class="gray-text text-align-center">html only with proper layout, no styling</p>
+            </section>
+        </header>
+        <main>
+            <div class="form_contact">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required placeholder="YourEmail@Mail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" required placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>                
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="review">
+                <h2 class="font-italic">Reviews by my teachers</h2>
+                <section class="reviews flex">
+                    <div class="review-item">
+                        <p class="review-comment">John Doe was a brillian student;Always stood out with his assigments.</p>
+                        <p class="teacher gray-text">Jane Doe</p>
+                        <p class="profession gray-text">Assistant Professor</p>
+                    </div>
+                    <div class="review-item">
+                        <p class="review-comment">John Doe was a brillian student;Always stood out with his assigments.</p>
+                        <p class="teacher gray-text">Jane Doe</p>
+                        <p class="profession gray-text">Assistant Professor</p>
+                    </div>
+                    <div class="review-item">
+                        <p class="review-comment">John Doe was a brillian student;Always stood out with his assigments.</p>
+                        <p class="teacher gray-text">Jane Doe</p>
+                        <p class="profession gray-text">Assistant Professor</p>
+                    </div>
+                </section>
+            </div>
+            <p class="copyright font-italic text-align-center">&copy; allrights reserved 2025</p> 
+        </footer>
+    </div>
+</body>
+</html> 
